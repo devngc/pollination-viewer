@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="google" value="notranslate">
+    <title>Pollination Viewer</title>
+    <meta name="description" content="Data Viewer in a browser">
+    <link inline rel="icon" type="image/png" href="icons/logo.png">
+    <style>
+    /* override vuetify for mobile */
+    html {
+      position: fixed; top: 0; bottom: 0; left: 0; right: 0;
+      overflow: hidden !important;
+    }
+    </style>
+    
+    <link inline rel="stylesheet" href="vendors.11f6f321efb87f4877a9.css">
+    
+    <link inline rel="stylesheet" href="glance.8f3e7e8827b7b4883ec2.css">
+    
+    
+    <script inline src="version.js"></script>
+    
+      <script inline src="runtime.0fc821c723cf3aa47120.js"></script>
+    
+      <script inline src="vendors.e06c05724b13fab6c687.js"></script>
+    
+      <script inline src="glance.f7a92c46baf3e424c5b4.js"></script>
+    
+      <script src="glance-external-ITKReader.527f1ea07b5574e4448c.js"></script>
+    
+      <script src="glance-external-Workbox.878508a61ecced2e9e96.js"></script>
+    
+  </head>
+  <body>
+    <div id="root-container"></div>
+    <script>
+      const container = document.querySelector('#root-container');
+      const glanceInstance = Glance.createViewer(container);
+      glanceInstance.showApp();
+      glanceInstance.processURLArgs();
+    </script>
+  </body>
+</html>
